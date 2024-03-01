@@ -2,8 +2,13 @@ import 'package:ainechack/core/helpers/commonLibs.dart';
 import 'package:flutter/material.dart';
 import 'features/home/view/HomePage.dart';
 
-void main() {
+void main() async{
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+  await Future.delayed(const Duration(seconds: 5));
+  FlutterNativeSplash.remove();
   runApp(const FireDetectionApp());
+
 }
 
 class FireDetectionApp extends StatelessWidget {

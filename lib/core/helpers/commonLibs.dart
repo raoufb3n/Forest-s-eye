@@ -11,6 +11,8 @@ export 'package:ainechack/core/Routing/Routes.dart';
 export 'package:ainechack/core/Theme/AppSizes.dart';
 export 'package:ainechack/core/Theme/AppTexts.dart';
 export 'package:flutter_screenutil/flutter_screenutil.dart';
+export 'package:ainechack/core/helpers/Assets.dart';
+export 'package:flutter_native_splash/flutter_native_splash.dart';
 
 
 
