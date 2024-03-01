@@ -1,3 +1,5 @@
+
+import 'package:ainechack/core/helpers/commonLibs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -19,7 +21,7 @@ import 'package:google_fonts/google_fonts.dart';
 /// | labelSmall    | 10.0 | regular |  1.5     |             |
 
 class AppText {
-  static TextTheme get _fontTextTheme => GoogleFonts.alexandriaTextTheme();
+  static TextTheme get _fontTextTheme => GoogleFonts.rubikTextTheme();
 
   static final _blackheadlineSmall = _fontTextTheme.headlineSmall?.copyWith(
     fontSize: 24.sp,
@@ -29,37 +31,37 @@ class AppText {
 
   static final _blacktitleLarge = _fontTextTheme.titleLarge?.copyWith(
     fontSize: 18.sp,
-    color: Colors.black,
+    color: Colors.white,
     fontWeight: FontWeight.w700,
   );
   static final _blacktitleMedium = _fontTextTheme.titleMedium?.copyWith(
     fontSize: 18.sp,
-    color: Colors.black,
+    color: Colors.white,
     fontWeight: FontWeight.w500,
   );
   static final _blacktitleSmall = _fontTextTheme.titleSmall?.copyWith(
     fontSize: 16.sp,
-    color: Colors.black,
+    color: Colors.white,
     fontWeight: FontWeight.w600,
   );
   static final _blackbodyLarge = _fontTextTheme.bodyLarge?.copyWith(
     fontSize: 16.sp,
-    color: Colors.black,
+    color: Colors.white,
     fontWeight: FontWeight.w500,
   );
   static final _blackbodyMedium = _fontTextTheme.bodyMedium?.copyWith(
     fontSize: 14.sp,
-    color: Colors.black,
+    color: Colors.white,
     fontWeight: FontWeight.w600,
   );
   static final _blackbodySmall = _fontTextTheme.bodySmall?.copyWith(
     fontSize: 14.sp,
-    color: Colors.black,
+    color: Colors.white,
     fontWeight: FontWeight.w500,
   );
   static final _blacklabelLarge = _fontTextTheme.labelLarge?.copyWith(
     fontSize: 12.sp,
-    color: Colors.black,
+    color: Colors.white,
     fontWeight: FontWeight.w400,
     letterSpacing: 0.4,
   );
