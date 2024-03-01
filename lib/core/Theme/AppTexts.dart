@@ -1,4 +1,3 @@
-
 import 'package:ainechack/core/helpers/commonLibs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -24,9 +23,9 @@ class AppText {
   static TextTheme get _fontTextTheme => GoogleFonts.rubikTextTheme();
 
   static final _blackheadlineSmall = _fontTextTheme.headlineSmall?.copyWith(
-    fontSize: 24.sp,
+    fontSize: 45.sp,
     color: Colors.black,
-    fontWeight: FontWeight.normal,
+    fontWeight: FontWeight.w700,
   );
 
   static final _blacktitleLarge = _fontTextTheme.titleLarge?.copyWith(

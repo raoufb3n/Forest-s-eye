@@ -1,6 +1,6 @@
 import 'package:ainechack/core/helpers/commonLibs.dart';
+import 'package:ainechack/features/Auth/view/LoginScreenView.dart';
 import 'package:flutter/material.dart';
-import 'features/home/view/HomePage.dart';
 
 void main() async{
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
@@ -23,13 +23,12 @@ class FireDetectionApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: AppThemes.lightTheme,
-          darkTheme: AppThemes.darkTheme,
           home: child,
           onGenerateRoute: AppRouter().generateRoute,
         );
         
       },
-      child: const HomePage(),
+      child: const LoginScreenView(),
     );
   }
 }
