@@ -26,10 +26,12 @@ class CustomTextField extends StatelessWidget {
       height: 42.h,
       width: context.screenWidth,
       child: TextFormField(
+        textInputAction: TextInputAction.next,
         controller: controller,
         obscureText: isPassword ? true : false,
         keyboardType: isEmail ? TextInputType.emailAddress : null,
         decoration: InputDecoration(
+          filled: true,
           prefixIcon: Container(
             padding: const EdgeInsets.all(8),
             constraints: BoxConstraints(
@@ -54,13 +56,13 @@ class CustomTextField extends StatelessWidget {
           fillColor: Theme.of(context).colorScheme.onBackground,
           hintText: hintText,
           hintStyle: Theme.of(context).textTheme.bodySmall,
-          focusColor: Theme.of(context).colorScheme.outline,
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(45),
+            borderRadius: BorderRadius.circular(50),
             borderSide: BorderSide(
-              color: Theme.of(context).colorScheme.outline,
-            ),
+                color: Theme.of(context).colorScheme.outline,
+                strokeAlign: BorderSide.strokeAlignOutside),
           ),
+          focusColor: Theme.of(context).colorScheme.outline,
         ),
       ),
     );

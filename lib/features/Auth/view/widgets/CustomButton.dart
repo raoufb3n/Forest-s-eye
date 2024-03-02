@@ -3,13 +3,16 @@ import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
-    super.key, required this.label,
+    super.key,
+    required this.label,
     this.onPressed,
+    required this.minimumSize,
+    required this.maximumSize,
   });
   final String label;
   final Function()? onPressed;
-
-  
+  final Size minimumSize;
+  final Size maximumSize;
 
   @override
   Widget build(BuildContext context) {
@@ -28,15 +31,11 @@ class CustomButton extends StatelessWidget {
                   borderRadius: BorderRadius.circular(100),
                 ),
               ),
-              minimumSize: MaterialStateProperty.all(
-                const Size(double.infinity, 45),
-              ),
-              maximumSize: MaterialStateProperty.all(
-                const Size(double.infinity, 45),
-              ),
+              minimumSize: MaterialStateProperty.all(minimumSize),
+              maximumSize: MaterialStateProperty.all(maximumSize),
             ),
         child: Text(
-          'Login',
+          label,
           style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                 fontSize: 15.sp,
               ),
