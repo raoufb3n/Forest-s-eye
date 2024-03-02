@@ -17,18 +17,24 @@ class HomeViewBody extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text(
-                    'Hello Ahmed',
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyMedium!
-                        .copyWith(color: Colors.white, fontSize: 24),
+                  Row(
+                    children: [
+                      Text(
+                        'Hello Ahmed',
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyMedium!
+                            .copyWith(color: Colors.white, fontSize: 24),
+                      ),
+                      Image.asset(
+                        Assets.hiIcon,
+                        height: 28,
+                        width: 28,
+                      ),
+                    ],
                   ),
-                  Image.asset(
-                    Assets.hiIcon,
-                    height: 28,
-                    width: 28,
-                  )
+                  const Spacer(),
+                  Image.asset(Assets.notification, height: 32, width: 32),
                 ],
               ),
               verticalSpace(32),

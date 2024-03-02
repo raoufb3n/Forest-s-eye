@@ -12,4 +12,5 @@ class Assets {
   static const String cameraIcon = 'Assets/images/camera.png';
   static const String home = 'Assets/icons/home.png';
   static const String user = 'Assets/icons/user.png';
+  static const String notification = 'Assets/icons/Notifi.png';
 }
